@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/louie
+    data-username: louie
+    password: louie1234
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password: xonro_vflow
+  session:
+    store-type: redis
+server:
+  servlet:
+    session:
+      timeout: "PT10M"
